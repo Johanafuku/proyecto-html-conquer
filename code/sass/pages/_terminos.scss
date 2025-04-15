@@ -1,0 +1,14 @@
+.terminos, .politica {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    h1 {
+        @include tituloh1();
+    }
+
+    p {
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+}

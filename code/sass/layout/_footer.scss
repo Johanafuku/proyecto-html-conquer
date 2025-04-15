@@ -1,0 +1,24 @@
+footer {
+   
+    background-color: $azul-medio;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+  
+
+    p {
+        font-size: 1.1rem;
+        color: $amarillo-suave;
+        padding: 10px;
+        @include breakpoint(tablethorizontal){
+            font-size: 1.2rem
+        }
+        
+    }
+
+    a {
+        @include enlaces();
+        color: $amarillo-suave;
+    }
+}

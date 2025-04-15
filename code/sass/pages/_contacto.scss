@@ -1,0 +1,185 @@
+.contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @include breakpoint(tablethorizontal){
+        margin-top: 40px;
+    }
+    @include breakpoint(desktop){
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+
+    &-info {
+        h2 {
+            @include tituloh2();
+        }
+
+        p {
+            margin-top: 15px;
+            font-size: 1.2rem;
+            text-align: justify;
+            @include breakpoint(tablethorizontal){
+                font-size: 1.4rem;
+            }
+        }
+
+        a {
+            font-size: 1.2rem;
+            @include enlaces();
+            @include breakpoint(tablethorizontal){
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+    &-direccion {
+        h2 {
+            @include tituloh2();
+            @include breakpoint(tablethorizontal){
+                margin-top: 30px;
+            }
+        }
+
+        iframe {
+            margin-top: 20px;
+            max-width: 100%;
+            width: 100%;
+            border: none;
+
+            @include breakpoint(tablet){
+                object-fit: cover;
+                height: 25vh;
+            }
+            @include breakpoint(tablethorizontal){
+                border-radius: 10px;
+                object-fit: cover;
+                height: 30vh;
+            }
+            @include breakpoint(desktopxl){
+                border-radius: 10px;
+                object-fit: cover;
+                height: 40vh;
+            }
+        }
+    }
+
+    &-form {
+        h3 {
+            font-size: 1.5rem;
+            line-height: 33px;
+            font-weight: 600;
+            @include breakpoint(tablethorizontal){
+                margin-top: 30px;
+                font-size: 2rem;
+            }
+        }
+
+        fieldset {
+            border: none;
+            margin-top: 20px;
+            @include breakpoint(tablethorizontal){
+                max-width: 80%;
+                margin-left: 90px;
+            }
+
+            div {
+                display: flex;
+                gap: 15px;
+                align-items: center;
+
+                input {
+                    @include input();
+                }
+                input:focus {
+                    outline: none;
+                    border: 1px solid $azul-medio;
+                }
+                label {
+                    @include breakpoint(tablethorizontal){
+                        font-size: 1.4rem;
+                        width: 40%;
+                    }
+                }
+                input[type=text]{
+                    @include breakpoint(tablethorizontal){
+                        font-size: 1.4rem;
+                    }
+                }
+                input[type=email]{
+                    @include breakpoint(tablethorizontal){
+                        font-size: 1.4rem;
+                    }
+                }
+                textarea {
+                    margin-top: 20px;
+                    width: 100%;
+                    max-width: 100%;
+                    @include breakpoint(tablethorizontal){
+                        font-size: 1.4rem;
+                    }
+                }
+                textarea:focus {
+                    outline: none;
+                    border: 1px solid $azul-medio;
+                }
+
+                .textarea {
+                    label {
+                        @include breakpoint(tablet){
+                            padding-right: 12px;
+                        }
+                    }
+                }
+
+            }
+
+            .contacto-legal {
+                margin-top: 20px;
+                margin-bottom: 20px;
+                flex-direction: column;
+
+                
+
+                input#aviso, input#termino {
+                    max-width: 20%;
+
+                    @include breakpoint(tablet){
+                        max-width: 10%;
+                    }
+                }
+
+                div {
+                    @include breakpoint(tablet){
+                        width: 100%;
+                    }
+                    label {
+                        @include breakpoint(tablethorizontal){
+                            width: 70%;
+                        }
+                    }
+                    input[type=checkbox]{
+                        @include breakpoint(tablethorizontal){
+                            transform: scale(1.5);
+                        }
+                    }
+                }
+            }
+
+            button {
+                @include boton();
+                @include breakpoint(tablethorizontal){
+                    font-size: 1.2rem;
+                }
+            }
+            button:hover {
+                cursor: pointer;
+                background-color: $azul-oscuro;
+            }
+
+        }
+
+       
+    }
+}

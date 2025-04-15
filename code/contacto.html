@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+
+    <!-- Título para el navegador y los buscadores -->
+    <title>Contacto</title>
+
+    <!-- Descripción de la página para los buscadores -->
+    <meta name="description" content="Página web con diferentes cursos de ConquerBlocks">
+
+    <!-- Palabras clave para los buscadores -->
+    <meta name="keywords" content="python, html, cripto, cursos">
+    <!-- Autor de la página -->
+    <meta name="author" content="Diana F">   
+    <!-- Codificación-->
+    <meta charset="UTF-8">
+    <!-- Para que la web sea responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Para algunos navegadores móviles -->
+    <meta name="theme-color" content="#1e7bbf">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+    
+            <img src="/img/logo-conquer.png" alt="" >
+        
+        <button class="abrir-menu"><img src="/img/icon-menu.png" alt=""></button>
+        <nav class="menu-principal" id="nav">
+            <ul>
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="quienes-somos.html" >Quiénes somos</a></li>
+                <li><a href="cursos.html" >Cursos</a></li>
+                <li><a href="blog.html" >Blog</a></li>
+                <li><a href="registro.html" >Registro</a></li>
+                <li><a href="login.html" >Login</a></li>
+                <li class="active">Contacto</li>
+            
+            </ul>
+            <button class="cerrar-menu">Cerrar</button>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="contacto">
+            <section class="contacto-info">
+                <h2>Contáctanos</h2>
+                <p>
+                    <strong>¿Queres saber más?</strong> Escribenos al siguiente correo y un asesor se pondrá en contacto contigo:
+                </p>
+                <a href="mailto:contacto@conquerx.com"><strong>contacto@conquerx.com</strong></a>
+            </section>
+   
+            <section class="contacto-direccion">
+                <h2>Dirección </h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d388698.4973768272!2d-4.00918065745566!3d40.43748615598066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997800a3c81%3A0xc436dec1618c2269!2zTWFkcmlkLCBFc3Bhw7Fh!5e0!3m2!1ses-419!2sbo!4v1716756033420!5m2!1ses-419!2sbo" 
+                 allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        
+            <section class="contacto-form">
+                <h3>Dejanos tus datos y nos contactaremos contigo</h3>
+                <form action="#" name="contacto" method="get" >
+                    <fieldset>
+                        <div>
+                        <label for="name">Nombre completo: </label>
+                        <input type="text" id="name" name="nombre"  required>
+                        </div>
+                        <div>
+                        <label for="email">Correo electrónico: </label>
+                        <input type="email" id="educación" name="correo" required>
+                        </div>
+                        <div class="textarea">
+                        <label for="message">Mensaje: </label><br>
+                        <textarea name="mensaje" id="message" cols="40" rows="5"></textarea>
+                        </div>
+                        <div class="contacto-legal">
+                            <div >
+                            <input type="checkbox" name="aviso" id="aviso" checked>
+                            <label for="aviso legal">He leído y acepto la política de privacidad</label>
+                            </div>
+                            <div >
+                            <input type="checkbox" name="terminos" id="termino" checked>
+                            <label for="termino">He leído y acepto los términos y condiciones</label>
+                            </div>
+                        </div>
+                    
+                        <button>Enviar </button>
+                    </fieldset>
+
+                </form>
+            </section>
+         </div>
+        </div>
+    </main>
+  
+    <footer>
+        <div class="container">
+
+       
+        <p>
+            © 2025 - Todos los derechos reservados | <a href="terminos-condiciones.html" target="_blank">Terminos y condiciones</a>
+            <a href="politica-privacidad.html" target="_blank">Politica de privacidad</a>
+        </p>
+        </div>
+    </footer>
+    <script type="module" src="/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,203 @@
+.registro-formulario {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+
+
+    fieldset {
+        border: none;
+        margin-top: 20px;
+
+        legend {
+            font-size: 1.2rem;
+            @include breakpoint(tablethorizontal){
+                font-size: 1.4rem;
+                margin-left: 100px;
+            }
+        }
+
+        div {
+            display: flex;
+            gap: 15px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            align-items: center;
+            @include breakpoint(tablethorizontal){
+                max-width: 80%;
+                margin-left: 100px;
+            }
+            
+        }
+
+        .legal {
+            margin-top: 20px;
+            display:grid;
+            grid-template-columns: 20% 1fr;
+            @include breakpoint(tablethorizontal){
+                grid-template-columns: 13% 1fr;
+            }
+        }
+        
+        input {
+            @include input();
+            
+        }
+
+        input[type=text]{
+            @include breakpoint(tablethorizontal){
+                font-size: 1.3rem;
+            }
+        }
+
+        input[type=checkbox]{
+            @include breakpoint(tablethorizontal){
+                transform: scale(1.5);
+            }
+        }
+        input[type=email]{
+            @include breakpoint(tablethorizontal){
+                font-size: 1.3rem;
+            }
+        }
+        input[type=date]{
+            @include breakpoint(tablethorizontal){
+                font-size: 1.3rem;
+            }
+        }
+
+        label {
+            color: $negro;
+            font-weight: 500;
+            font-size: 1rem;
+            @include breakpoint(tablethorizontal){
+                font-size: 1.3rem;
+                padding-right: 20px;
+            }
+        }
+        input:focus {
+            outline: none;
+            border: 1px solid $azul-medio;
+        }
+
+        textarea {
+            margin-top: 20px;
+            width: 100%;
+            max-width: 100%;
+            @include breakpoint(tablethorizontal){
+                font-size: 1.3rem;
+            }
+        }
+
+             
+
+        textarea:focus {
+            outline: none;
+            border: 1px solid $azul-medio;
+        }
+
+        input::file-selector-button {
+            @include boton();
+            @include breakpoint(tablethorizontal){
+                font-size: 1.2rem;
+            }
+        }
+        input::file-selector-button:hover {
+            cursor: pointer;
+            background-color: $azul-oscuro;
+        }
+
+        .botones {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            @include breakpoint(tablethorizontal){
+                grid-template-columns: 40% 40%;
+            }
+        }
+        button, .reset {
+            @include boton();
+            @include breakpoint(tablethorizontal){
+                font-size: 1.2rem;
+            }
+        }
+        button:hover, .reset:hover {
+            cursor: pointer;
+            background-color: $azul-oscuro;
+        }
+    }
+}
+
+/*login*/
+
+.login {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    h1 {
+        @include tituloh1();
+    }
+    div {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        input {
+            @include input();
+        }
+
+        input:focus {
+            outline: none;
+            border: 1px solid $azul-medio;
+        }
+
+        input[type=text]{
+            @include breakpoint(tablethorizontal){
+                font-size: 1.3rem;
+            }
+        }
+        input[type=password]{
+            @include breakpoint(tablethorizontal){
+                font-size: 1.3rem;
+            }
+        }
+
+        label {
+            color: $negro;
+            font-weight: 500;
+            font-size: 1rem;
+            @include breakpoint(tablethorizontal){
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+    &-botones {
+        button {
+            @include boton();
+            @include breakpoint(tablethorizontal){
+                font-size: 1.2rem;
+            }
+        }
+        button:hover {
+            cursor: pointer;
+            background-color: $azul-oscuro;
+        }
+    }
+    fieldset {
+       border: none;
+       margin-top: 10px;
+       @include breakpoint(tablethorizontal){
+        margin-left: 100px;
+        max-width: 80%;
+       }
+    }
+
+    legend {
+        font-size: 1.2rem;
+        @include breakpoint(tablethorizontal){
+            font-size: 1.4rem;
+        }
+    }
+}

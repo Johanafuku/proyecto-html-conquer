@@ -1,0 +1,107 @@
+.seccion {
+    @include breakpoint(desktop){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        background-color: $amarillo-suave;
+        margin-top: 50px;
+        border: 1px solid $azul-medio;
+        border-radius: 10px;
+    }
+}
+
+.home-programas {
+    margin-top: 30px;
+    @include breakpoint(tablethorizontal){
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    @include breakpoint(desktop){
+        padding-left: 30px;
+    }
+   
+
+    h2 {
+        font-size: 35px;
+        line-height: 45px;
+        @include breakpoint(tablethorizontal){
+            font-size: 40px;
+        }
+        @include breakpoint(desktop){
+            font-size: 36px;
+        }
+    }
+
+    p {
+        font-size: 1.2rem;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        @include breakpoint(tablethorizontal){
+            font-size: 1.4rem;
+        }
+    }
+
+    li {
+        margin-top: 15px;
+    }
+
+    a {
+        @include enlaces();
+        @include breakpoint(tablethorizontal){
+            font-size: 1.4rem;
+        }
+    }
+
+    .home-extra {
+        font-weight: normal;
+        color: $negro;
+    }
+}
+
+
+
+.home-noticias {
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 25px;
+    background-color: $amarillo-suave;
+    @include breakpoint(tablethorizontal){
+        padding-bottom: 35px;
+    }
+    @include breakpoint(desktop){
+        margin-top: 24px;
+        padding-left: 30px;
+        background-color: transparent;
+    }
+    
+    h2 {
+        margin-top: 10px;
+        @include tituloh2();
+        @include breakpoint(tablethorizontal){
+            font-size: 40px;
+        }
+        @include breakpoint(desktop){
+            font-size: 36px;
+        }
+    }
+
+    p {
+        margin-top: 15px;
+        font-size: 1.2rem;
+        @include breakpoint(tablethorizontal){
+            font-size: 1.4rem;
+        }
+    }
+
+    li {
+        margin-top: 15px;
+    }
+
+    a {
+        @include enlaces();
+        @include breakpoint(tablethorizontal){
+            font-size: 1.4rem;
+        }
+    }
+}

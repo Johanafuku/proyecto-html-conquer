@@ -1,0 +1,78 @@
+@mixin breakpoint($bp) {
+
+  @if $bp == mobile {
+    @media (max-width: 769px) {
+      @content;
+    }
+  }
+
+  @if $bp == tablet {
+    @media (min-width: $bp-tablet) {
+      @content;
+    }
+  } 
+  
+@if $bp == tablethorizontal {
+  @media (min-width: $bp-tablet-horizontal) {
+    @content;
+    }
+  } 
+
+@if $bp == desktop {
+  @media (min-width: $bp-desktop) {
+    @content;
+  }
+} 
+
+@if $bp == desktopxl {
+  @media (min-width: $bp-desktop-xl) {
+    @content;
+}
+} 
+}
+
+
+@mixin reset-link(){
+  text-decoration: none;
+  color: $negro;
+  display: flex;
+}
+
+@mixin enlaces(){
+    color: $azul-oscuro;
+    text-underline-offset: 7px;
+    text-underline-position: 10px;
+    font-weight: 600;
+    font-size: 1.2rem;
+
+}
+
+@mixin tituloh1(){
+        font-size: 41px;
+        font-weight: 700;
+        line-height: 45px;
+        text-transform: uppercase;
+}
+
+@mixin tituloh2(){
+  font-size: 35px;
+  line-height: 45px;
+}
+
+@mixin boton(){
+  background-color: rgb(128, 178, 201);
+  border: 1px solid $azul-oscuro;
+  border-radius: 3px;
+  padding: 8.5px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+@mixin input(){
+  border: none;
+  max-width: 100%;
+  padding: 10px;
+  border-bottom: 1px solid $negro;
+  width: 100%;
+}

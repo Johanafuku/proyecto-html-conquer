@@ -1,0 +1,57 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 22px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 22px;
+    background-color: $azul-oscuro;
+
+    @include breakpoint(tablethorizontal){
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+    @include breakpoint(desktop){
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    @include breakpoint(desktopxl){
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+ 
+   img {
+    width: 250px;
+   }
+
+    .abrir-menu {
+        display: none;
+        cursor: pointer;
+        @include breakpoint(mobile){
+            display: block;
+            background-color: $azul-oscuro;
+            border: none;            
+            img {
+                width: 40px;
+            }
+        }
+    }
+
+    .cerrar-menu {
+        display: none;
+        cursor: pointer;
+        border: 0;
+        background-color: transparent;
+        color: white;
+        font-size: 1rem;
+        @include breakpoint(mobile){
+            display: block;
+        }
+    }
+
+    .cerrar-menu:hover {
+        font-weight: 700;
+    }
+}

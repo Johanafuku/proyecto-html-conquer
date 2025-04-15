@@ -1,0 +1,63 @@
+.cursos {
+    display: flex;
+    flex-direction: column;
+    @include breakpoint(tablethorizontal){
+        margin-top: 40px;
+    }
+    h1 {
+        @include tituloh1();
+    }
+
+    p {
+        margin-top: 15px;
+        font-size: 1.2rem;
+        @include breakpoint(tablethorizontal){
+            font-size: 1.3rem;
+        }
+
+    }
+
+    &-detalle {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        @include breakpoint(desktop){
+            align-items: center
+        }
+
+        .cursos-titulo {
+            @include tituloh2();
+        }
+        .cursos-img {
+            max-width: 100%;
+            margin-top: 15px;
+            @include breakpoint(desktop){
+                object-fit: cover;
+                height: 35vh;
+                border-radius: 10px;
+                width: 80%;
+                margin-top: 25px;
+            }
+        }
+
+        .cursos-info {
+            font-size: 1.2rem;
+            text-align: justify;
+            @include breakpoint(desktop){
+                width: 80%;
+                font-size: 1.4rem;
+            }
+        }
+
+        .cursos-link {
+            margin-top: 15px;
+            @include enlaces();
+            @include breakpoint(desktop){
+                width: 80%;
+                font-size: 1.4rem;
+                margin-bottom: 20px;
+            }
+        }
+        
+    }
+}

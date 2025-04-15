@@ -1,0 +1,20 @@
+html {
+    font-family: $primary-font;
+    color: $negro;
+    font-size: 15px;
+}
+body {
+    overflow-x: hidden;
+    position: relative;
+    padding-bottom: 150px;
+    min-height: 100vh;
+
+    @include breakpoint(tablet){
+        padding-bottom: 120px;
+    }
+
+    @include breakpoint(tablethorizontal){
+        padding-bottom: 95px;
+    }
+
+} 

@@ -1,0 +1,52 @@
+.blog-articulo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    @include breakpoint(tablethorizontal){
+        margin-top: 40px;
+    }
+    @include breakpoint(desktop){
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+
+    &-titulo {
+        @include tituloh1();
+        font-size: 35px;
+    }
+    &-autor {
+        font-size: 1.3rem;
+    }   
+    &-img {
+        max-width: 100%;
+        width: 100%;
+        @include breakpoint(tablethorizontal){
+            border-radius: 10px;
+            object-fit: cover;
+            width: 100%;
+            height: 32vh;
+        }
+    }
+    &-texto {
+        font-size: 1.2rem;
+        text-align: justify;
+        @include breakpoint(tablethorizontal){
+            font-size: 1.4rem;
+        }
+    }
+
+    &-enlace {
+        @include enlaces();
+        @include breakpoint(tablethorizontal){
+            font-size: 1.4rem;
+        }
+    }
+}
+
+.blog-articulo-link {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    @include breakpoint(tablethorizontal){
+        font-size: 1.4rem;
+    }
+}

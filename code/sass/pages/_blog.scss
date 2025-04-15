@@ -1,0 +1,43 @@
+.blog {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @include breakpoint(tablethorizontal){
+        margin-top: 40px;
+    }
+    @include breakpoint(desktop){
+        width: 80%;
+        margin-left: 30px;
+    }
+   
+    h1 {
+        @include tituloh1();
+        
+    }
+    p {
+        font-size: 1.2rem;
+        @include breakpoint(tablethorizontal){
+            font-size: 1.4rem;
+        }
+    }
+
+    li {
+        border: 1px solid $negro;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        @include breakpoint(tablethorizontal){
+            font-size: 1.3rem;
+        }
+    }
+
+    li:hover {
+        background-color: $amarillo-suave;
+    }
+
+    a {
+        @include enlaces();
+        padding: 5px;
+    }
+}

@@ -1,0 +1,20 @@
+.container {
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 22px;
+    margin-bottom: 22px;
+
+    @include breakpoint(tablet){
+        margin-left: 22px;
+        margin-right: 22px;
+    }
+
+    @include breakpoint(desktop){
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+}
+
+.container.noticias {
+    margin: 0;
+}

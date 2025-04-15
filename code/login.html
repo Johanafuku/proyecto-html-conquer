@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+
+    <!-- Título para el navegador y los buscadores -->
+    <title>Login</title>
+
+    <!-- Descripción de la página para los buscadores -->
+    <meta name="description" content="Página web con diferentes cursos de ConquerBlocks">
+
+    <!-- Palabras clave para los buscadores -->
+    <meta name="keywords" content="python, html, cripto, blockchain,programacion,inteligencia artificial, full stack development">
+
+    <!-- Autor de la página -->
+    <meta name="author" content="Diana F">
+    <!-- Codificación-->
+    <meta charset="UTF-8">
+    <!-- Para que la web sea responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Para algunos navegadores móviles -->
+    <meta name="theme-color" content="#1e7bbf">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+            <img src="/img/logo-conquer.png" alt="" >
+    
+
+        <button class="abrir-menu"><img src="/img/icon-menu.png" alt=""></button>
+        <nav class="menu-principal" id="nav">
+            <ul>
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="quienes-somos.html" >Quiénes somos</a></li>
+                <li><a href="cursos.html" >Cursos</a></li>
+                <li><a href="blog.html" >Blog</a></li>
+                <li><a href="registro.html" >Registro</a></li>
+                <li class="active">Login</li>
+                <li><a href="contacto.html" >Contacto</a></li>
+            
+            </ul>
+            <button class="cerrar-menu">Cerrar</button>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="login">
+            <h1>Login</h1>
+            <form action="#" name="registro" method="get">
+                <fieldset>
+                <legend>Credenciales</legend>
+                <div>
+                <label for="user">Usuario o correo: </label>
+                <input type="text" id="user" name="usuario"  required>
+                </div>
+                <div>
+                <label for="password">Contraseña: </label>
+                <input type="password" id="password"  required>
+                </div>
+                <div class="login-botones">
+                    <button>Iniciar sesión</button>
+                    <button>Registrarse</button>
+                </div>
+               
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    </main>
+   
+    <footer>
+        <div class="container">
+        <p>
+            © 2025 - Todos los derechos reservados | <a href="terminos-condiciones.html" target="_blank">Terminos y condiciones</a>
+            <a href="politica-privacidad.html" target="_blank">Politica de privacidad</a>
+        </p>
+        </div>
+    </footer>
+    <script type="module" src="/main.js"></script>
+</body>
+
+</html>

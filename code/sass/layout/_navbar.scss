@@ -1,0 +1,63 @@
+.menu-principal {
+    padding: 0;
+    @include breakpoint(mobile){
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        padding: 22px;
+        background-color: $naranja;
+        box-shadow: 0 0 0 100vmax rgba(158, 151, 151, 0.5);
+
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+        gap: 1rem;
+
+        @include breakpoint(mobile){
+            flex-direction: column;
+            align-items:flex-end;
+        }
+
+        a {
+            @include reset-link();
+            color: white;
+            @include breakpoint(tablethorizontal){
+                font-size: 1.2rem;
+            }
+           
+        }
+
+        a:hover {
+            font-weight: 700;
+        }
+
+        .active {
+            color: white;
+            font-weight: 700;
+            @include breakpoint(tablethorizontal){
+                font-size: 1.2rem;
+            }
+        }
+
+     
+     
+        
+    }
+
+ 
+}
+
+.menu-principal.visible {
+        opacity: 1;
+        visibility: visible;
+    
+}
